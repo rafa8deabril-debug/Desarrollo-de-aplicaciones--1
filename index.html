@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portafolio Académico</title>
+<title>Desarrollo de Aplicaciones 1</title>
 
 <link rel="stylesheet" href="styles.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
@@ -15,194 +19,287 @@
 
 <!-- NAVBAR -->
 
-<header class="navbar">
+<nav>
 
-<div class="logo-box">
+<div class="logo">
 
-<img src="logo.png">
+<img src="logo.png" alt="Logo Rafael" class="logo-img">
 
-<span>
-Espinal Huaman Luis
-</span>
+<span>Rafael Max</span>
 
 </div>
 
-<nav>
+<ul>
 
-<a href="#">Inicio</a>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#github">GitHub</a></li>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#temas">Semanas</a></li>
+<li><a href="#habilidades">Habilidades</a></li>
+<li><a href="#contacto">Contacto</a></li>
 
-<a onclick="abrirTareas()">
-Tareas
-</a>
-
-<a href="#github">
-GitHub
-</a>
+</ul>
 
 </nav>
 
-</header>
-
-
-
 <!-- HERO -->
 
-<section class="hero">
+<section id="inicio" class="hero">
 
-<h1>
-Portafolio Académico Profesional
-</h1>
+<h1>Desarrollo de Aplicaciones 1</h1>
 
 <p>
-
-Bienvenido a mi portafolio.
-Aquí encontrarás todas mis tareas,
-proyectos y avances del curso.
-
+Curso introductorio enfocado en los fundamentos de programación,
+donde se aprende lógica computacional y creación de aplicaciones básicas.
 </p>
 
-<button onclick="abrirTareas()">
-
-Ver semanas
-
+<button class="btn">
+Comenzar Curso
 </button>
 
 </section>
 
+<!-- GITHUB -->
 
+<section id="github">
 
-<!-- TARJETAS -->
+<h2>Introducción a GitHub</h2>
 
-<section class="cards">
+<div class="cards">
 
 <div class="card">
 
-<h3>
-📁 Tareas
-</h3>
+<i class="fa-brands fa-github"></i>
+
+<h3>¿Qué es GitHub?</h3>
 
 <p>
-Organización de tareas
-por semanas del curso.
+GitHub es una plataforma que permite guardar proyectos
+de programación en línea, compartir código y trabajar
+en equipo utilizando repositorios.
 </p>
 
 </div>
 
-
-
 <div class="card">
 
-<h3>
-👤 Perfil
-</h3>
+<i class="fa-solid fa-code-branch"></i>
+
+<h3>¿Para qué se usa?</h3>
 
 <p>
-Información académica
-del estudiante.
+Se utiliza para almacenar proyectos, hacer versiones
+del código y mostrar trabajos profesionales
+en un portafolio digital.
 </p>
 
 </div>
 
-
-
 <div class="card">
 
-<h3>
-💻 Proyectos
-</h3>
+<i class="fa-solid fa-laptop"></i>
+
+<h3>Uso en el curso</h3>
 
 <p>
-Proyectos realizados
-durante el semestre.
+Durante el curso se usa GitHub para subir tareas,
+organizar archivos y compartir proyectos
+de programación.
 </p>
 
 </div>
-
-
-
-<div class="card">
-
-<h3>
-📘 GitHub
-</h3>
-
-<p>
-Uso y explicación
-de la plataforma.
-</p>
 
 </div>
 
 </section>
 
+<!-- SOBRE -->
 
+<section id="sobre">
 
-<!-- INTRO GITHUB -->
+<h2>Sobre el Curso</h2>
 
-<section id="github" class="github">
+<div class="cards">
 
-<h2>
-Introducción a GitHub
-</h2>
+<div class="card">
+<i class="fa-solid fa-laptop-code"></i>
+
+<h3>Programación Básica</h3>
 
 <p>
-
-GitHub es una plataforma donde puedes
-guardar tus proyectos de programación
-y compartirlos con otras personas.
-
-Permite trabajar en equipo,
-hacer cambios en el código
-y mantener versiones organizadas.
-
-Se utiliza principalmente para:
-
+Aprenderás desde cero los conceptos fundamentales
+para crear programas funcionales.
 </p>
 
-<ul>
+</div>
 
-<li>Guardar proyectos en la nube</li>
+<div class="card">
+<i class="fa-solid fa-brain"></i>
 
-<li>Compartir código</li>
+<h3>Lógica Computacional</h3>
 
-<li>Crear portafolios profesionales</li>
+<p>
+Desarrollarás habilidades para resolver problemas
+utilizando algoritmos.
+</p>
 
-<li>Trabajar en equipo</li>
+</div>
 
-</ul>
+<div class="card">
+<i class="fa-solid fa-terminal"></i>
+
+<h3>Primeros Programas</h3>
+
+<p>
+Crearás tus primeras aplicaciones
+mediante estructuras básicas.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
+<!-- SEMANAS -->
 
+<section id="temas">
 
-<!-- MODAL -->
+<h2>Semanas del Curso</h2>
 
-<div id="modal" class="modal">
+<div class="cards">
 
-<div class="modal-box">
+<div class="card">
+<i class="fa-solid fa-1"></i>
+<h3>Semana 1</h3>
+<p>Variables y tipos de datos.</p>
+</div>
 
-<span onclick="cerrarTareas()" class="cerrar">
+<div class="card">
+<i class="fa-solid fa-2"></i>
+<h3>Semana 2</h3>
+<p>Estructuras condicionales.</p>
+</div>
 
-×
+<div class="card">
+<i class="fa-solid fa-3"></i>
+<h3>Semana 3</h3>
+<p>Bucles repetitivos.</p>
+</div>
 
-</span>
+<div class="card">
+<i class="fa-solid fa-4"></i>
+<h3>Semana 4</h3>
+<p>Métodos y funciones.</p>
+</div>
 
-<h2>
+<div class="card">
+<i class="fa-solid fa-5"></i>
+<h3>Semana 5</h3>
+<p>Arreglos y listas.</p>
+</div>
 
-Semanas del Curso
+<div class="card">
+<i class="fa-solid fa-6"></i>
+<h3>Semana 6</h3>
+<p>Manejo de datos.</p>
+</div>
 
-</h2>
+<div class="card">
+<i class="fa-solid fa-7"></i>
+<h3>Semana 7</h3>
+<p>Programación modular.</p>
+</div>
 
-<div class="grid-semanas">
+<div class="card">
+<i class="fa-solid fa-8"></i>
+<h3>Semana 8</h3>
+<p>Proyecto final.</p>
+</div>
 
-<button>Semana 1</button>
-<button>Semana 2</button>
-<button>Semana 3</button>
-<button>Semana 4</button>
-<button>Semana 5</button>
-<button>Semana 6</button>
-<button>Semana 7</button>
-<button>Semana 8</button>
+</div>
+
+</section>
+
+<!-- HABILIDADES -->
+
+<section id="habilidades">
+
+<h2>Habilidades Aprendidas</h2>
+
+<div class="skills">
+
+<div class="skill">
+
+<p>Programación</p>
+
+<div class="barra">
+<div class="progreso p1"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>Lógica</p>
+
+<div class="barra">
+<div class="progreso p2"></div>
+</div>
+
+</div>
+
+<div class="skill">
+
+<p>Algoritmos</p>
+
+<div class="barra">
+<div class="progreso p3"></div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section id="contacto">
+
+<h2>Contacto</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-envelope"></i>
+
+<p>
+Correo: rafael@email.com
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-user"></i>
+
+<p>
+Autor: Rafael Max
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-share-nodes"></i>
+
+<div class="social">
+
+<i class="fa-brands fa-github"></i>
+<i class="fa-brands fa-linkedin"></i>
+<i class="fa-brands fa-facebook"></i>
 
 </div>
 
@@ -210,37 +307,17 @@ Semanas del Curso
 
 </div>
 
-
+</section>
 
 <!-- FOOTER -->
 
 <footer>
 
-© 2026 Portafolio Académico
+<p>
+© 2026 Rafael Max | Desarrollo de Aplicaciones 1
+</p>
 
 </footer>
-
-
-
-<script>
-
-function abrirTareas(){
-
-document.getElementById(
-"modal"
-).style.display="flex";
-
-}
-
-function cerrarTareas(){
-
-document.getElementById(
-"modal"
-).style.display="none";
-
-}
-
-</script>
 
 </body>
 </html>
