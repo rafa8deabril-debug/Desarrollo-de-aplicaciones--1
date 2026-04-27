@@ -231,7 +231,7 @@ transform:translateY(40px);
 }
 
 to{
-opacity:1;
+opacity:1;corner-end-end-shape: calc();
 transform:translateY(0);
 }
 
