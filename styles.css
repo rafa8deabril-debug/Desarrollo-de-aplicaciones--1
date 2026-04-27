@@ -7,7 +7,7 @@ box-sizing:border-box;
 font-family:'Segoe UI', sans-serif;
 }
 
-/* FONDO */
+/* FONDO GENERAL */
 
 body{
 background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
@@ -29,21 +29,26 @@ backdrop-filter: blur(10px);
 z-index:1000;
 }
 
+/* LOGO + NOMBRE */
+
 .logo{
 font-size:24px;
 font-weight:bold;
 color:#00eaff;
 display:flex;
 align-items:center;
-gap:10px;
+gap:12px;
 }
 
-.logo-img{
-width:40px;
-height:40px;
+/* LOGO UNIVERSIDAD */
+
+.logo-u{
+width:45px;
+height:45px;
 object-fit:contain;
-border-radius:10px;
 }
+
+/* MENU */
 
 nav ul{
 list-style:none;
@@ -81,14 +86,18 @@ color:#00eaff;
 margin-bottom:10px;
 }
 
-.hero p{
-margin-top:10px;
-font-size:18px;
-width:60%;
-opacity:0.9;
+/* DESCRIPCION GRANDE */
+
+.descripcion{
+font-size:19px;
+width:65%;
+margin-top:15px;
+font-weight:500;
+line-height:1.6;
+color:#e0f7ff;
 }
 
-/* BOTON */
+/* BOTON PRINCIPAL */
 
 .btn{
 margin-top:25px;
@@ -136,7 +145,7 @@ margin-top:30px;
 background:white;
 color:black;
 padding:25px;
-width:260px;
+width:280px;
 border-radius:20px;
 box-shadow:0 10px 25px rgba(0,0,0,0.4);
 transition:0.3s;
@@ -146,6 +155,18 @@ transition:0.3s;
 transform:translateY(-10px) scale(1.03);
 }
 
+/* IMAGEN CARDS */
+
+.img-card{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:15px;
+}
+
+/* ICONOS */
+
 .card i{
 font-size:40px;
 color:#00bcd4;
@@ -154,6 +175,25 @@ margin-bottom:15px;
 
 .card h3{
 margin-bottom:10px;
+}
+
+/* BOTON DOCUMENTOS */
+
+.btn-doc{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#00eaff;
+color:black;
+border-radius:25px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn-doc:hover{
+background:white;
+transform:scale(1.05);
 }
 
 /* SKILLS */
@@ -187,11 +227,19 @@ border-radius:10px;
 animation: cargar 2s ease;
 }
 
-.p1{width:85%;}
-.p2{width:90%;}
-.p3{width:80%;}
+.p1{
+width:85%;
+}
 
-/* REDES */
+.p2{
+width:90%;
+}
+
+.p3{
+width:80%;
+}
+
+/* CONTACTO */
 
 .social{
 margin-top:10px;
@@ -231,7 +279,7 @@ transform:translateY(40px);
 }
 
 to{
-opacity:1;corner-end-end-shape: calc();
+opacity:1;
 transform:translateY(0);
 }
 
@@ -253,7 +301,7 @@ width:0;
 font-size:40px;
 }
 
-.hero p{
+.descripcion{
 width:90%;
 }
 
@@ -277,6 +325,11 @@ font-size:32px;
 
 .card{
 width:90%;
+}
+
+.logo-u{
+width:35px;
+height:35px;
 }
 
 }
